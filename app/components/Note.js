@@ -2,9 +2,12 @@ import React from 'react';
 
 function Note(props) {
     return(
-        <div>
+        /*<div>
             {props.task}
             <button onClick={props.onDelete}>x</button>
+        </div>*/
+        <div {...props}>
+            {props.children}
         </div>
     );
 }
